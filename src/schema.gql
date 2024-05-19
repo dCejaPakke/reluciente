@@ -1,0 +1,99 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  id: String!
+  name: String!
+  email: String!
+  phoneNumber: String!
+  age: Int!
+  experience: Int!
+  pictureUrl: String!
+  description: String!
+}
+
+type Experience {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Job {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Address {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+type Query {
+  users: [User!]!
+  user(id: Int!): User!
+  experiences: [Experience!]!
+  experience(id: Int!): Experience!
+  jobs: [Job!]!
+  job(id: Int!): Job!
+  addresses: [Address!]!
+  address(id: Int!): Address!
+}
+
+type Mutation {
+  createUser(createUserInput: CreateUserInput!): User!
+  updateUser(updateUserInput: UpdateUserInput!): User!
+  removeUser(id: Int!): User!
+  createExperience(createExperienceInput: CreateExperienceInput!): Experience!
+  updateExperience(updateExperienceInput: UpdateExperienceInput!): Experience!
+  removeExperience(id: Int!): Experience!
+  createJob(createJobInput: CreateJobInput!): Job!
+  updateJob(updateJobInput: UpdateJobInput!): Job!
+  removeJob(id: Int!): Job!
+  createAddress(createAddressInput: CreateAddressInput!): Address!
+  updateAddress(updateAddressInput: UpdateAddressInput!): Address!
+  removeAddress(id: Int!): Address!
+}
+
+input CreateUserInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateUserInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateExperienceInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateExperienceInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateJobInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateJobInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
+
+input CreateAddressInput {
+  """Example field (placeholder)"""
+  exampleField: Int!
+}
+
+input UpdateAddressInput {
+  """Example field (placeholder)"""
+  exampleField: Int
+  id: Int!
+}
